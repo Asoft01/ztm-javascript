@@ -124,9 +124,25 @@
 //     });
 //     console.log(total);
 // }
+//////////// 
+// function add(...nums) {
+//     let total = nums.reduce((x, y) => x + y);
+//     console.log(total);
+// }
+// add(4, 5, 6, 7, 20);
 
-function add(...nums) {
-    let total = nums.reduce((x, y) => x + y);
-    console.log(total);
-}
-add(4, 5, 6, 7, 20);
+///////////////////////// Default Params //////////////////////////////////////////
+// function add(numArray = []){
+//     let total = 0; 
+//     numArray.forEach((element) => {
+//         total += element; 
+//     }); 
+//     console.log(total); 
+// }
+
+// add(); 
+//////////////// Check if an array has a value /////////////////////////////////
+let numArray = [1, 2, 3, 4, 5]; 
+// the below is wacky
+// console.log(numArray.indexOf(0));
+
