@@ -72,10 +72,61 @@
 // addressMaker({city: 'Austin', state: 'Texas'});
 
 ////////////////////////////// For Loop //////////////////////////////////////////////////
-let incomes = [62000, 67000, 75000]; 
-let total = 0; 
+// let incomes = [62000, 67000, 75000]; 
+// let total = 0; 
 
-for(const income of incomes) {
-    total += income; 
+// for(const income of incomes) {
+//     total += income; 
+// }
+// console.log(total); 
+
+/////////////
+////////////
+// let fullName = "Dylan Coding of Guru"; 
+// for (const char of fullName) {
+//     console.log(char); 
+// }
+
+////////////////////////// For of Loop challenge //////////////////////////////////////////
+// let incomes = [62000, 67000, 75000]; 
+// for (let income of incomes) {
+//     income += 5000;
+// }
+
+// console.log(incomes);
+
+///////////////////////////// Spread Operator //////////////////////////////////////////
+// let example1 = [1, 2, 3, 4, 5, 6]; 
+// let example2 = [...example1]; 
+
+// console.log(example2); 
+
+/////////////////////////// Rest Operator ////////////////////////////////////////////
+// function add(nums) {
+//     // console.log(nums);
+//     // console.log(arguments);
+// }
+
+// add(4, 5, 6, 8, 10);
+
+////////// In cases u are not sure of the number of inputs //////////
+// function add(...nums) {
+//     console.log(nums);
+// }
+
+// add(4, 5, 6, 7, 20);
+
+
+//////////////////////////// Arrow Function ////////////////////////////////////////
+// function add(...nums) {
+//     let total = nums.reduce(function(x, y) {
+//         return x + y;
+//     });
+//     console.log(total);
+// }
+
+function add(...nums) {
+    let total = nums.reduce((x, y) => x + y);
+    console.log(total);
 }
-console.log(total); 
+add(4, 5, 6, 7, 20);
