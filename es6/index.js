@@ -57,15 +57,25 @@
 
 // addressMaker({city: 'Austin', state: 'Texas'});
 
-// Rewriting it 
-function addressMaker(address) {
-    const {city, state} = address; 
+//////////// Rewriting it ////////////////////// 
 
-    const newAddress = {
-        city, 
-        state, 
-        country: 'United States'
-    }
-    console.log(`${newAddress.city}, ${newAddress.state}, ${newAddress.country}`); 
+// function addressMaker(address) {
+//     const {city, state} = address; 
+
+//     const newAddress = {
+//         city, 
+//         state, 
+//         country: 'United States'
+//     }
+//     console.log(`${newAddress.city}, ${newAddress.state}, ${newAddress.country}`); 
+// }
+// addressMaker({city: 'Austin', state: 'Texas'});
+
+////////////////////////////// For Loop //////////////////////////////////////////////////
+let incomes = [62000, 67000, 75000]; 
+let total = 0; 
+
+for(const income of incomes) {
+    total += income; 
 }
-addressMaker({city: 'Austin', state: 'Texas'});
+console.log(total); 
