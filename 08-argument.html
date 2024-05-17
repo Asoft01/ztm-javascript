@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // Function Expression 
+    var canada = () => {
+        console.log('cold');
+    }
+
+    // Function Declaration 
+    function india() {
+        console.log('warm');
+    }
+
+    // Function Invocation // Call // Execution 
+    canada()
+    india()
+
+    function marry(person1, person2) {
+        console.log(arguments); 
+        console.log(Array.from(arguments));
+        return `${person1} was married to ${person2}`;
+    }
+
+    marry('Tim', 'Tina');
+
+    function marry1(...args) {
+        console.log(arguments);
+        console.log(Array.from(arguments)); 
+        return `${args[0]} is now married ${args[1]}`;
+    }  
+    
+</script>
