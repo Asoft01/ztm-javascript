@@ -142,7 +142,31 @@
 
 // add(); 
 //////////////// Check if an array has a value /////////////////////////////////
-let numArray = [1, 2, 3, 4, 5]; 
+// let numArray = [1, 2, 3, 4, 5]; 
 // the below is wacky
 // console.log(numArray.indexOf(0));
 
+
+
+const items = ["item1", "item2", "item3"];
+const copyItems = [];
+
+// before
+for (let i = 0; i < items.length; i++) {
+  copyItems.push(items[i]);
+  console.log(copyItems); 
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////
+
+// // after
+// items.forEach((item) => {
+//   copyItems.push(item);
+//   console.log(copyItems); 
+// });
+
+// items.forEach((item) => {
+//     copyItems.push(item); 
+//     console.log(copyItems); 
+// })
